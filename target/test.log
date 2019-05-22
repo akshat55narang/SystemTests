@@ -1,0 +1,106 @@
+01:04:36.123 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:20:49.729 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+01:20:50.071 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:20:50.598 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:20:50.600 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:20:50.601 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+01:20:53.266 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+01:20:53.602 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:20:54.002 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:20:54.002 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:20:54.003 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+01:20:55.591 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:20:55.591 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+01:21:00.253 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+01:21:00.254 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com/index.php
+01:21:00.255 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Create an Account
+01:21:00.255 [main] INFO  stepdefinitions.StepDefinitionCommons - ***********  Before Scenario *************
+01:21:00.270 [main] INFO  stepdefinitions.StepDefinitionCommons - *********** Executing After Scenario *************
+01:21:00.361 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:21:00.362 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Status = PASSED
+01:57:17.392 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+01:57:17.862 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:57:19.112 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:57:19.116 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:57:19.117 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+01:57:21.566 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:57:21.566 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+01:57:28.043 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+01:57:28.043 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+01:57:32.138 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+01:57:32.140 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Create an Account when user clicks on Sign In button
+01:57:44.157 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+01:58:14.262 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+01:58:58.299 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:58:58.299 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Create an Account when user clicks on Sign In button Complete with Status FAILED
+22:30:07.525 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:30:07.957 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:30:09.112 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:30:09.113 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:30:09.113 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:30:11.509 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:30:11.509 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:30:19.199 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:30:19.199 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:30:19.199 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:30:19.199 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Create an Account when user clicks on Sign In button
+22:30:19.231 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:30:49.500 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+22:30:49.591 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+22:30:49.592 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Create an Account when user clicks on Sign In button Complete with Status FAILED
+22:33:25.698 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:33:26.013 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:33:26.489 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:33:26.490 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:33:26.490 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:33:28.283 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:33:28.284 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:33:34.024 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:33:34.024 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:33:34.024 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:33:34.025 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Create an Account when user clicks on Sign In button
+22:34:09.284 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:34:13.865 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:34:14.217 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:34:14.707 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:34:14.707 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:34:14.707 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:34:16.129 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:34:16.129 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:34:21.645 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:34:21.645 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:34:21.645 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:34:21.646 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Create an Account when user clicks on Sign In button
+22:34:39.029 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:40:36.732 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:40:37.067 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:40:37.613 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:40:37.613 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:40:37.614 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:40:39.278 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:40:39.278 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:40:44.589 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:40:44.590 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:40:44.591 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:40:44.591 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Create an Account when user clicks on Sign In button
+22:40:57.008 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:41:14.258 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+22:41:21.292 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+22:41:21.389 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+22:41:21.389 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Create an Account when user clicks on Sign In button Complete with Status PASSED
+00:19:15.888 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+00:19:16.423 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:19:17.063 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:19:17.063 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:19:17.063 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+00:19:18.981 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:19:18.981 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+00:19:27.778 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+00:19:27.778 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:19:27.779 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:19:27.779 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Create an Account when user clicks on Sign In button
+00:19:27.812 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+00:19:29.907 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+00:19:29.942 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:19:30.031 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:19:30.032 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Create an Account when user clicks on Sign In button Complete with Status PASSED
