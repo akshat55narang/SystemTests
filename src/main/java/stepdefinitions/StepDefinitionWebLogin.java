@@ -9,6 +9,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import pageobjects.WebLoginPage;
 
+import static general.CustomWaits.assertEventually;
+import static managers.ConfigFileManager.DEFAULT_EMAIL_ADDRESS;
+import static managers.ConfigFileManager.getPropertyValueByName;
+import static org.junit.Assert.assertTrue;
+
 public class StepDefinitionWebLogin extends AbstractApi {
     private WebLoginPage webLoginPage;
     private RootInitializer rootInitializer;
@@ -27,12 +32,14 @@ public class StepDefinitionWebLogin extends AbstractApi {
 
     @Then("user is redirected to view Sign In form")
     public void verifySignInAuthenticationPage() {
-
+        assertEventually(5, 1000, () -> {
+            assertTrue(webLoginPage.isAuthenticationPageLoaded());
+        });
     }
 
     @When("the user enters a valid email in the create account section")
     public void enterValidEmail() {
-
+        webLoginPage.enterEmailInAccountCreation(getPropertyValueByName(DEFAULT_EMAIL_ADDRESS));
     }
 
     @Then("the user should be redirected to account creation page")

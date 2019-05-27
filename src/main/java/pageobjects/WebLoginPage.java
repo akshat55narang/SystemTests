@@ -16,8 +16,13 @@ public class WebLoginPage extends AbstractPage {
 
     public void clickSignInButton(String buttonText) {
         clickButtonWithText(buttonText);
-        waituntilElementAppears(By.xpath("//h1[text()='Authentication']"));
     }
 
+    public boolean isAuthenticationPageLoaded() {
+        return waituntilElementAppears(By.xpath("//h1[text()='Authentication']")).isDisplayed();
+    }
 
+    public void enterEmailInAccountCreation(String email) {
+        sendTextToFieldBy(By.id("email_create"), email);
+    }
 }

@@ -13,13 +13,13 @@ public class ConfigFileManager {
     public static final String DEFAULT_WEB_URL = "url";
     public static final String DEFAULT_BROWSER = "browser";
     public static final String DEFAULT_TIMEOUT = "explicit_timeout";
+    public static final String DEFAULT_EMAIL_ADDRESS = "default_email_address";
 
     public static Properties loadProperties() {
         Properties properties = null;
         try (BufferedReader reader = new BufferedReader(new FileReader(PROPERTIES_PATH))) {
             properties = new Properties();
             properties.load(reader);
-            log.info("Property File loaded successfully!! ");
         } catch (IOException e) {
             log.error("Not able to Load proeprty file !!");
             e.printStackTrace();

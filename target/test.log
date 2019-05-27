@@ -104,3 +104,50 @@
 00:19:29.942 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
 00:19:30.031 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
 00:19:30.032 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Create an Account when user clicks on Sign In button Complete with Status PASSED
+23:33:16.324 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:33:16.781 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+23:33:17.852 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+23:33:17.852 [main] INFO  managers.RootInitializer - Initializing Driver !!
+23:33:17.853 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:33:21.133 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+23:33:21.133 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:33:26.965 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:33:26.966 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+23:33:26.966 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+23:33:26.967 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Authentication UI when user clicks on Sign In button
+23:33:26.975 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:33:27.043 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:33:57.052 [main] ERROR general.CustomWaits - Assertion attempt = 0Expected condition failed: waiting for visibility of element located by By.xpath: //h1[text()='Authentication'] (tried for 30 second(s) with 500 milliseconds interval)
+23:33:58.070 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:28.060 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:28.408 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+23:37:28.900 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+23:37:28.900 [main] INFO  managers.RootInitializer - Initializing Driver !!
+23:37:28.901 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:30.485 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+23:37:30.486 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:35.341 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:35.342 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+23:37:35.342 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+23:37:35.342 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Authentication UI when user clicks on Sign In button
+23:37:35.349 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:37.314 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:38.354 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:39.380 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:40.410 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:41.445 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:42.476 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:42.477 [main] INFO  managers.ConfigFileManager - Property File loaded successfully!! 
+23:37:42.687 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+23:37:42.799 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+23:37:42.799 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Authentication UI when user clicks on Sign In button Complete with Status PASSED
+23:38:40.645 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+23:38:41.311 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+23:38:41.312 [main] INFO  managers.RootInitializer - Initializing Driver !!
+23:38:42.704 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+23:38:47.712 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+23:38:47.713 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+23:38:47.713 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Authentication UI when user clicks on Sign In button
+23:39:44.896 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+23:39:44.994 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+23:39:44.994 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Authentication UI when user clicks on Sign In button Complete with Status PASSED
