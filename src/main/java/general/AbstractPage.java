@@ -1,5 +1,7 @@
 package general;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -19,6 +22,7 @@ import static managers.ConfigFileManager.getPropertyValueByName;
 
 public class AbstractPage {
     private WebDriver driver;
+    private static final Logger logger = LogManager.getLogger(AbstractPage.class);
 
     public AbstractPage(WebDriver driver) {
         this.driver = driver;
@@ -29,12 +33,16 @@ public class AbstractPage {
                 .ignoring(StaleElementReferenceException.class);
     }
 
+    public String getCurrentUrl() {
+        return driver.getCurrentUrl();
+    }
+
     protected WebElement findElement(By by) {
         return driver.findElement(by);
     }
 
     protected WebElement waitForElement(By by) {
-        return newWait().until(ExpectedConditions.visibilityOf(findElement(by)));
+        return newWait().until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
     protected WebElement waitForElement(int timeout, By by) {
@@ -74,19 +82,19 @@ public class AbstractPage {
         element.getAttribute("value").equals(email);
     }
 
-    public void moveToAnElement(WebElement element) {
+    protected void moveToAnElement(WebElement element) {
         new Actions(driver).moveToElement(element);
     }
 
-    public void moveToAnElement(Actions actions, WebElement element) {
+    protected void moveToAnElement(Actions actions, WebElement element) {
         actions.moveToElement(element).perform();
     }
 
-    public void moveToMultipleElementsAndPerformAction(WebElement ...elements) {
+    protected void moveToMultipleElementsAndPerformAction(WebElement... elements) {
         moveToMultipleElementsAndPerformAction(actions -> actions.click().build().perform(), elements);
     }
 
-    public void moveToMultipleElementsAndPerformAction(Consumer<Actions> actions, WebElement ...elements) {
+    protected void moveToMultipleElementsAndPerformAction(Consumer<Actions> actions, WebElement... elements) {
         Actions action = new Actions(driver);
         Arrays.asList(elements).forEach(
                 element -> {
@@ -95,4 +103,15 @@ public class AbstractPage {
         actions.accept(action);
     }
 
+    protected void selectByIndex(WebElement element, int index) {
+        new Select(element).selectByIndex(index);
+    }
+
+    protected void selectByValue(WebElement element, String value) {
+        new Select(element).selectByValue(value);
+    }
+
+    protected void selectByVisibleText(WebElement element, String visibleText) {
+        new Select(element).selectByVisibleText(visibleText);
+    }
 }

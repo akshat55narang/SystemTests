@@ -1,7 +1,5 @@
 Feature: Login
 
-  Background: Ensure users are logged in
-
   Scenario: Authentication UI when user clicks on Sign In button
     Given User clicks on the button "Sign in"
     Then user is redirected to view Sign In form
@@ -9,4 +7,5 @@ Feature: Login
     Then the user should be redirected to account creation page
 
   Scenario:
+    Given
 

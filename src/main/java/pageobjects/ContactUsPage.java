@@ -1,22 +1,33 @@
 package pageobjects;
 
 import general.AbstractPage;
-import io.restassured.RestAssured;
-import io.restassured.specification.RequestSpecification;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import static managers.ConfigFileManager.DEFAULT_WEB_URL;
+import static managers.ConfigFileManager.getPropertyValueByName;
+import static org.junit.Assert.assertTrue;
 
 public class ContactUsPage extends AbstractPage {
     private WebDriver driver;
+    private static final Logger logger = LogManager.getLogger(ContactUsPage.class);
 
     public ContactUsPage(WebDriver driver) {
         super(driver);
+        this.driver = driver;
     }
 
-    public static void main(String []args) {
-        RestAssured.baseURI = "https://reqres.in";
-        RequestSpecification requestSpecification = RestAssured.given();
-        requestSpecification.header("test", "tes");
-        requestSpecification.log().all();
-        requestSpecification.get("https://reqres.in/api/users?page=2");
+    public void verify() {
+        driver.get(getPropertyValueByName(DEFAULT_WEB_URL) + "?controller=contact");
+        logger.info("Opening Contact Us Page !!!!");
+        assertTrue("Current Url is not Contact Us", getCurrentUrl().endsWith("controller=contact"));
+    }
+
+    public void selectMessageHeading(String visibleText) {
+        WebElement element = findElement(By.id("id_contact"));
+        selectByVisibleText(element, visibleText);
     }
 }

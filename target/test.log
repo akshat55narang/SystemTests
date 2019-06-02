@@ -151,3 +151,199 @@
 23:39:44.896 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
 23:39:44.994 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
 23:39:44.994 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Authentication UI when user clicks on Sign In button Complete with Status PASSED
+20:55:53.723 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+20:55:54.986 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+20:55:54.986 [main] INFO  managers.RootInitializer - Initializing Driver !!
+20:55:58.137 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+20:56:03.557 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+20:56:03.559 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+20:56:03.559 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Authentication UI when user clicks on Sign In button
+20:56:11.423 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+20:56:11.532 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+20:56:11.532 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Authentication UI when user clicks on Sign In button Complete with Status PASSED
+21:16:06.044 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+21:16:06.557 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+21:16:06.557 [main] INFO  managers.RootInitializer - Initializing Driver !!
+21:16:08.189 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+21:16:13.222 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+21:16:13.225 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+21:16:13.225 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is redirected to Contact Us page
+21:16:13.229 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+21:16:13.332 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+21:16:13.332 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is redirected to Contact Us page Complete with Status UNDEFINED
+21:16:13.348 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+21:16:13.402 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+21:16:13.402 [main] INFO  managers.RootInitializer - Initializing Driver !!
+21:16:14.264 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+21:16:23.114 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+21:16:23.114 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+21:16:23.114 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is able to send message
+21:16:23.115 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+21:16:23.205 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+21:16:23.205 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is able to send message Complete with Status UNDEFINED
+21:16:23.210 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+21:16:23.273 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+21:16:23.273 [main] INFO  managers.RootInitializer - Initializing Driver !!
+21:16:24.169 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+21:16:32.972 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+21:16:32.972 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+21:16:32.973 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Authentication UI when user clicks on Sign In button
+21:16:40.684 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+21:16:40.775 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+21:16:40.775 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Authentication UI when user clicks on Sign In button Complete with Status PASSED
+21:59:36.676 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+21:59:37.923 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+21:59:37.923 [main] INFO  managers.RootInitializer - Initializing Driver !!
+21:59:39.783 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+21:59:44.844 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+21:59:44.847 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+21:59:44.847 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is redirected to Contact Us page
+21:59:44.854 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+21:59:44.957 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+21:59:44.958 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is redirected to Contact Us page Complete with Status UNDEFINED
+21:59:44.972 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+21:59:45.042 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+21:59:45.042 [main] INFO  managers.RootInitializer - Initializing Driver !!
+21:59:46.148 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+21:59:51.545 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+21:59:51.546 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+21:59:51.546 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is able to send message
+21:59:51.549 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+21:59:51.638 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+21:59:51.638 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is able to send message Complete with Status PENDING
+21:59:51.641 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+21:59:51.694 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+21:59:51.694 [main] INFO  managers.RootInitializer - Initializing Driver !!
+21:59:52.757 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:00:00.605 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:00:00.605 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:00:00.605 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Authentication UI when user clicks on Sign In button
+22:00:08.885 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+22:00:08.973 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+22:00:08.973 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Authentication UI when user clicks on Sign In button Complete with Status PASSED
+22:05:02.980 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:05:03.360 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:05:03.360 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:05:04.724 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:05:12.094 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:05:12.096 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:05:12.097 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is redirected to Contact Us page
+22:05:12.098 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+22:05:12.185 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+22:05:12.185 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is redirected to Contact Us page Complete with Status UNDEFINED
+22:05:12.194 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:05:12.331 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:05:12.331 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:05:13.279 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:05:20.829 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:05:20.829 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:05:20.829 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is able to send message
+22:05:51.175 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+22:05:51.273 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+22:05:51.273 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is able to send message Complete with Status FAILED
+22:05:51.279 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:05:51.389 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:05:51.389 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:05:52.400 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:05:57.419 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:45:25.484 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:45:26.046 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:45:26.046 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:45:27.706 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:45:35.750 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:45:35.751 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:45:35.751 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is redirected to Contact Us page
+22:45:40.867 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+22:45:40.964 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+22:45:40.964 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is redirected to Contact Us page Complete with Status PASSED
+22:45:40.968 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:45:41.028 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:45:41.028 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:45:41.930 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:45:48.609 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:45:48.609 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:45:48.609 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is able to send message
+22:45:51.799 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+22:45:51.923 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+22:45:51.923 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is able to send message Complete with Status FAILED
+22:46:30.433 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:46:30.915 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:46:30.916 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:46:32.333 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:46:37.678 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:46:37.678 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:46:37.678 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is redirected to Contact Us page
+22:46:42.595 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+22:46:51.986 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+22:46:51.986 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is redirected to Contact Us page Complete with Status PASSED
+22:46:51.990 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:46:52.053 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:46:52.054 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:46:53.015 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:46:58.682 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:46:58.682 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:46:58.683 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is able to send message
+22:47:04.217 [main] INFO  pageobjects.ContactUsPage - Opening Contact Us Page !!!!
+22:48:09.878 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+22:48:09.981 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+22:48:09.982 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is able to send message Complete with Status FAILED
+22:49:19.414 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:49:19.934 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:49:19.935 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:49:21.458 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:49:26.220 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:49:26.222 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:49:26.222 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is redirected to Contact Us page
+22:49:31.057 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+22:49:31.157 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+22:49:31.158 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is redirected to Contact Us page Complete with Status PASSED
+22:49:31.164 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:49:31.267 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:49:31.267 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:49:32.156 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:49:38.292 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:49:38.292 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:49:38.293 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is able to send message
+22:49:43.645 [main] INFO  pageobjects.ContactUsPage - Opening Contact Us Page !!!!
+22:50:54.839 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:50:55.331 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:50:55.331 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:50:56.890 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:51:05.910 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:51:05.910 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:51:05.924 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is redirected to Contact Us page
+22:51:12.143 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+22:51:12.240 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+22:51:12.240 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is redirected to Contact Us page Complete with Status PASSED
+22:51:12.246 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+22:51:12.296 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+22:51:12.296 [main] INFO  managers.RootInitializer - Initializing Driver !!
+22:51:13.169 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+22:51:19.328 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+22:51:19.328 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+22:51:19.328 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is able to send message
+22:51:25.227 [main] INFO  pageobjects.ContactUsPage - Opening Contact Us Page !!!!
+22:51:59.907 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+22:52:00.005 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+22:52:00.006 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is able to send message Complete with Status FAILED
+23:03:01.754 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+23:03:02.643 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+23:03:02.643 [main] INFO  managers.RootInitializer - Initializing Driver !!
+23:03:04.217 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+23:03:09.450 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+23:03:09.453 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+23:03:09.453 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is redirected to Contact Us page
+23:03:14.400 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+23:03:14.497 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+23:03:14.498 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is redirected to Contact Us page Complete with Status PASSED
+23:03:14.509 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+23:03:14.646 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+23:03:14.646 [main] INFO  managers.RootInitializer - Initializing Driver !!
+23:03:15.569 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+23:03:20.764 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+23:03:20.764 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+23:03:20.764 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Verify user is able to send message
+23:03:26.439 [main] INFO  pageobjects.ContactUsPage - Opening Contact Us Page !!!!
+23:03:27.805 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+23:03:27.905 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+23:03:27.905 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is able to send message Complete with Status PASSED
