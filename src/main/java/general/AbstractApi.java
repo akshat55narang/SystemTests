@@ -12,19 +12,28 @@ import static managers.ConfigFileManager.getPropertyValueByName;
 
 public class AbstractApi {
 
-    public RequestSpecification given() {
+    protected RequestSpecification givenWithLogs() {
         return RestAssured.given().log().all();
     }
 
-    public RequestSender when() {
+    protected RequestSpecification given() {
+        return RestAssured.given();
+    }
+
+    protected RequestSpecification baseRequestSpecification() {
+        return given().contentType("application/json");
+    }
+
+    protected RequestSender when() {
         return RestAssured.when();
     }
 
-    public Response get(String uri) {
+    protected Response get(String uri) {
         return RestAssured.get(getPropertyValueByName(DEFAULT_API_URI) + uri);
     }
 
-    public Response get(String uri, Map<String, String> params) {
+    protected Response get(String uri, Map<String, String> params) {
         return RestAssured.get(uri, params);
     }
+
 }

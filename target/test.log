@@ -347,3 +347,288 @@
 23:03:27.805 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
 23:03:27.905 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
 23:03:27.905 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Verify user is able to send message Complete with Status PASSED
+00:22:39.114 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:22:40.028 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:22:40.028 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:22:41.894 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:22:47.248 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:22:47.249 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:22:47.249 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+00:22:47.252 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:22:47.375 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:22:47.375 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status UNDEFINED
+00:22:47.389 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:22:47.444 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:22:47.444 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:22:48.539 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:23:00.359 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:23:00.360 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:23:00.360 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+00:23:00.361 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:23:00.461 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:23:00.461 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status UNDEFINED
+00:29:46.732 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:29:47.261 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:29:47.262 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:29:48.935 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:29:54.459 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:29:54.460 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:29:54.460 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+00:29:55.456 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:29:55.556 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:29:55.556 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status PASSED
+00:29:55.560 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:29:55.631 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:29:55.631 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:29:56.552 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:30:04.940 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:30:04.940 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:30:04.940 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+00:30:04.941 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:30:05.035 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:30:05.035 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status PASSED
+00:46:20.299 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:46:20.767 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:46:20.767 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:46:22.214 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:46:28.015 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:46:28.016 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:46:28.016 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+00:46:28.018 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:46:28.108 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:46:28.108 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status PASSED
+00:46:28.112 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:46:28.177 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:46:28.177 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:46:29.105 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:46:37.307 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:46:37.308 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:46:37.308 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+00:46:38.957 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:46:39.049 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:46:39.049 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status FAILED
+00:47:14.175 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:47:14.547 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:47:14.547 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:47:15.844 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:47:23.168 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:47:23.169 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:47:23.169 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+00:47:23.175 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:47:23.263 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:47:23.263 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status PASSED
+00:47:23.265 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:47:23.321 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:47:23.321 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:47:24.175 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:47:31.907 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:47:31.907 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:47:31.907 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+00:47:33.241 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:47:33.335 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:47:33.335 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status PASSED
+01:04:27.108 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:04:27.644 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:04:27.644 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:04:29.399 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:04:34.127 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+01:04:34.129 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+01:04:34.129 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+01:04:35.241 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+01:04:35.349 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:04:35.349 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status FAILED
+01:04:35.359 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:04:35.425 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:04:35.425 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:04:36.349 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:04:41.452 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+01:04:41.452 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+01:04:41.452 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+01:04:42.123 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+01:04:42.219 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:04:42.219 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status FAILED
+00:45:37.857 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:45:39.121 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:45:39.123 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:45:42.256 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:45:47.100 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:45:47.103 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:45:47.103 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+00:45:55.547 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:45:55.653 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:45:55.654 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status FAILED
+00:45:55.668 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:45:55.711 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:45:55.712 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:45:56.769 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:46:02.030 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:46:02.031 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:46:02.031 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+00:46:02.945 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:46:03.035 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:46:03.035 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status FAILED
+00:53:48.516 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:53:49.044 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:53:49.045 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:53:50.827 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:53:55.536 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:53:55.537 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:53:55.537 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+00:54:27.844 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:54:27.957 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:54:27.957 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status FAILED
+00:54:27.971 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:54:28.024 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:54:28.025 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:54:28.913 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:54:36.435 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:54:36.435 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:54:36.435 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+00:54:37.374 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:54:37.472 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:54:37.472 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status FAILED
+00:56:17.954 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:56:18.422 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:56:18.423 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:56:19.850 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:56:25.316 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:56:25.317 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:56:25.317 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+00:56:41.146 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:56:41.240 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:56:41.241 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status FAILED
+00:56:41.253 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:56:41.296 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:56:41.296 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:56:42.253 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:57:09.611 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:57:10.105 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:57:10.105 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:57:11.498 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:57:16.288 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:57:16.288 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:57:16.288 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+00:57:32.394 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:57:32.513 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:57:32.513 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status FAILED
+00:57:32.522 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:57:32.568 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:57:32.568 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:57:33.567 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:57:38.869 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:57:38.869 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:57:38.869 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+00:57:39.927 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:57:40.017 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:57:40.017 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status FAILED
+00:59:38.309 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:59:38.709 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:59:38.709 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:59:40.066 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:59:44.841 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:59:44.841 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:59:44.841 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+00:59:46.078 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:59:46.186 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:59:46.186 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status FAILED
+00:59:46.195 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+00:59:46.269 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+00:59:46.272 [main] INFO  managers.RootInitializer - Initializing Driver !!
+00:59:47.287 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+00:59:52.224 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+00:59:52.224 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+00:59:52.225 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+00:59:52.821 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+00:59:52.920 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+00:59:52.921 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status FAILED
+01:01:11.225 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:01:11.660 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:01:11.660 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:01:13.200 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:01:18.175 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+01:01:18.175 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+01:01:18.175 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+01:01:19.537 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+01:01:19.647 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:01:19.648 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status FAILED
+01:01:19.656 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:01:19.733 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:01:19.733 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:01:20.654 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:01:29.589 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+01:01:29.590 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+01:01:29.590 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+01:01:30.268 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+01:01:30.372 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:01:30.372 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status FAILED
+01:03:21.919 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:03:22.334 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:03:22.334 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:03:23.586 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:03:31.399 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+01:03:31.399 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+01:03:31.399 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+01:03:32.495 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+01:03:32.586 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:03:32.587 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status FAILED
+01:03:32.594 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:03:32.660 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:03:32.661 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:03:33.620 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:03:41.232 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+01:03:41.233 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+01:03:41.233 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+01:03:41.960 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+01:03:42.049 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:03:42.050 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status FAILED
+01:05:42.019 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:05:42.431 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:05:42.431 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:05:43.770 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:05:48.568 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+01:05:48.569 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+01:05:48.569 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+01:05:49.988 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+01:05:50.094 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:05:50.095 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status FAILED
+01:05:50.102 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:05:50.166 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:05:50.166 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:05:51.116 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:05:56.380 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+01:05:56.382 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+01:05:56.382 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+01:05:56.834 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+01:05:56.932 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:05:56.932 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status FAILED
+01:07:27.397 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:07:27.802 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:07:27.803 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:07:29.077 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:07:33.942 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+01:07:33.942 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+01:07:33.942 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+01:07:35.409 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+01:07:35.513 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:07:35.513 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status FAILED
+01:07:35.522 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:07:35.576 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:07:35.576 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:07:36.613 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:07:41.948 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+01:07:41.949 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+01:07:41.949 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - Single User
+01:07:42.431 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+01:07:42.531 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:07:42.531 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario Single User Complete with Status FAILED
+01:18:32.733 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/
+01:18:34.800 [main] INFO  managers.RootInitializer - Setting up ChromeDriver !!
+01:18:34.801 [main] INFO  managers.RootInitializer - Initializing Driver !!
+01:18:39.129 [main] INFO  initializedriver.DriverProvider - Starting Chrome !!!
+01:18:45.277 [main] INFO  initializedriver.DriverProvider - Opening URLhttp://automationpractice.com
+01:18:45.280 [main] INFO  stepdefinitions.StepDefinitionCommons - *******  Before Scenario ********
+01:18:45.281 [main] INFO  stepdefinitions.StepDefinitionCommons - Executing Scenario - List multiple users
+01:19:36.245 [main] INFO  stepdefinitions.StepDefinitionCommons - ****** Executing After Scenario *******
+01:19:36.416 [main] INFO  stepdefinitions.StepDefinitionCommons - Closed all Webdriver Instances !!!
+01:19:36.417 [main] INFO  stepdefinitions.StepDefinitionCommons - Scenario List multiple users Complete with Status PASSED
+01:19:36.422 [main] INFO  managers.RootInitializer - Set Base URI to =https://reqres.in/

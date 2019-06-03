@@ -7,11 +7,11 @@ import pageobjects.HomePage;
 import static general.CustomWaits.assertEventually;
 import static org.junit.Assert.assertTrue;
 
-public class StepDefinitionHome {
+public class StepDefinitionHomePage {
     private RootInitializer rootInitializer;
     private HomePage homePage;
 
-    public StepDefinitionHome(RootInitializer rootInitializer) {
+    public StepDefinitionHomePage(RootInitializer rootInitializer) {
         this.rootInitializer = rootInitializer;
         homePage = rootInitializer.getPageManager().getHomePage();
     }

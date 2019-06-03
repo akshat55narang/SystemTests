@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/main/resources/Feature"
         , glue = "stepdefinitions"
-        , tags = "@contact"
+        , tags = "@api"
         , monochrome = true
         //, plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
         //, dryRun = true

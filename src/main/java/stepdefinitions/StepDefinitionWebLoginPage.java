@@ -14,13 +14,13 @@ import static managers.ConfigFileManager.DEFAULT_EMAIL_ADDRESS;
 import static managers.ConfigFileManager.getPropertyValueByName;
 import static org.junit.Assert.assertTrue;
 
-public class StepDefinitionWebLogin extends AbstractApi {
+public class StepDefinitionWebLoginPage extends AbstractApi {
     private WebLoginPage webLoginPage;
     private RootInitializer rootInitializer;
 
-    private static final Logger log = LogManager.getLogger(StepDefinitionWebLogin.class);
+    private static final Logger log = LogManager.getLogger(StepDefinitionWebLoginPage.class);
 
-    public StepDefinitionWebLogin(RootInitializer rootInitializer) {
+    public StepDefinitionWebLoginPage(RootInitializer rootInitializer) {
         this.rootInitializer = rootInitializer;
         webLoginPage = rootInitializer.getPageManager().getWebLoginPage();
     }

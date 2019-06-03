@@ -10,13 +10,13 @@ import pageobjects.ContactUsPage;
 
 import static org.junit.Assert.assertTrue;
 
-public class StepDefinitionContactUs {
+public class StepDefinitionContactUsPage {
     private RootInitializer rootInitializer;
     private ContactUsPage contactUsPage;
 
-    private static final Logger log = LogManager.getLogger(StepDefinitionContactUs.class);
+    private static final Logger log = LogManager.getLogger(StepDefinitionContactUsPage.class);
 
-    public StepDefinitionContactUs(RootInitializer rootInitializer) {
+    public StepDefinitionContactUsPage(RootInitializer rootInitializer) {
         this.rootInitializer = rootInitializer;
         contactUsPage = rootInitializer.getPageManager().getContactUsPage();
     }
