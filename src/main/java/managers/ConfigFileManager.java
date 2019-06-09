@@ -15,7 +15,9 @@ public class ConfigFileManager {
     public static final String DEFAULT_TIMEOUT = "explicit_timeout";
     public static final String DEFAULT_EMAIL_ADDRESS = "default_email_address";
     public static final String USERS_API = "users.api";
+    public static final String REGISTER_API = "register.api";
     public static final String DEFAULT_API_PAGE_SIZE = "default.pagesize";
+    public static final String TEST_TYPE = "test.type";
 
     public static Properties loadProperties() {
         Properties properties = null;

@@ -27,8 +27,6 @@ public class DriverProvider {
                 logger.info("Starting Firefox !!!");
                 break;
         }
-        driver.get(getPropertyValueByName(DEFAULT_WEB_URL));
-        logger.info("Opening URL" + getPropertyValueByName(DEFAULT_WEB_URL));
         return driver;
     }
 
