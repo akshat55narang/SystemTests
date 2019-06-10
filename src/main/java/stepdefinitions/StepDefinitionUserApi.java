@@ -62,22 +62,22 @@ public class StepDefinitionUserApi extends AbstractApi {
     @Then("I should receive a status code {string} and the response body contain user with name {string} and  job {string}")
     public void verifyUserNameAndJob(String code, String userName, String job) {
         Response extractResponse = rootInitializer.getWorldResponse().then().extract().response();
-        extractResponse.then().assertThat().statusCode(Integer.parseInt(code));
-        extractResponse.then().assertThat().body("name", equalTo(userName));
-        extractResponse.then().assertThat().body("job", equalTo(job));
+        extractResponse.then().assertThat().statusCode(Integer.parseInt(code))
+                .assertThat().body("name", equalTo(userName))
+                .assertThat().body("job", equalTo(job));
     }
 
-    @Given("I call the users api to update user with name {string} and job {string} using {string} HTTP method")
-    public void updateUserNameAndJob(String userName, String job, String httpMethod) {
+    @Given("I call the users api to update user with id {string} name {string} and job {string} using {string} HTTP method")
+    public void updateUserNameAndJob(String userId, String userName, String job, String httpMethod) {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("name", userName)
                 .put("job", job);
         if (httpMethod.equals("put")) {
             rootInitializer.setWorldResponse(baseRequestSpecification().body(jsonObject.toString())
-                    .put(getPropertyValueByName(USERS_API) + "/2"));
+                    .put(getPropertyValueByName(USERS_API) + "/" + userId));
         } else {
             rootInitializer.setWorldResponse(baseRequestSpecification().body(jsonObject.toString())
-                    .patch(getPropertyValueByName(USERS_API) + "/2"));
+                    .patch(getPropertyValueByName(USERS_API) + "/" + userId));
         }
     }
 

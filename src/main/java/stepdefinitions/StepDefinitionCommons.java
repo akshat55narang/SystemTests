@@ -8,6 +8,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
+import static managers.ConfigFileManager.TEST_TYPE;
+import static managers.ConfigFileManager.getPropertyValueByName;
+
 public class StepDefinitionCommons {
     private RootInitializer rootInitializer;
     private WebDriver driver;
@@ -29,15 +32,14 @@ public class StepDefinitionCommons {
     @After
     public void afterScenario(Scenario scenario) {
         log.info("****** Executing After Scenario *******");
-        if (driver != null) {
-            driver.quit();
-            log.info("Closed all Webdriver Instances !!!");
+        if (getPropertyValueByName(TEST_TYPE).equals("UI")) {
+            if (driver != null) {
+                driver.quit();
+                log.info("Closed all Webdriver Instances !!!");
+            }
         }
         log.info("Scenario " + scenario.getName() + " Complete with Status " + scenario.getStatus());
     }
-
-
-
 
 
 }
