@@ -9,8 +9,7 @@ import managers.RootInitializer;
 import org.json.JSONObject;
 
 import static managers.ConfigFileManager.*;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.greaterThan;
+import static org.hamcrest.Matchers.*;
 
 public class StepDefinitionUserApi extends AbstractApi {
     private RootInitializer rootInitializer;
@@ -56,23 +55,42 @@ public class StepDefinitionUserApi extends AbstractApi {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("name", userName)
                 .put("job", job);
-        response = baseRequestSpecification().log().all().body(jsonObject.toString())
-                .post(getPropertyValueByName(USERS_API));
-        response.then().log().all();
+        rootInitializer.setWorldResponse(baseRequestSpecification().body(jsonObject.toString())
+                .post(getPropertyValueByName(USERS_API)));
     }
 
     @Then("I should receive a status code {string} and the response body contain user with name {string} and  job {string}")
-    public void verifyStatusCodeAndResponseBodyCreateOperation(String string, String string2, String string3) {
-
+    public void verifyUserNameAndJob(String code, String userName, String job) {
+        Response extractResponse = rootInitializer.getWorldResponse().then().extract().response();
+        extractResponse.then().assertThat().statusCode(Integer.parseInt(code));
+        extractResponse.then().assertThat().body("name", equalTo(userName));
+        extractResponse.then().assertThat().body("job", equalTo(job));
     }
 
     @Given("I call the users api to update user with name {string} and job {string} using {string} HTTP method")
-    public void i_call_the_users_api_to_update_user_with_name_and_job_using_HTTP_method(String string, String string2, String string3) {
-
+    public void updateUserNameAndJob(String userName, String job, String httpMethod) {
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("name", userName)
+                .put("job", job);
+        if (httpMethod.equals("put")) {
+            rootInitializer.setWorldResponse(baseRequestSpecification().body(jsonObject.toString())
+                    .put(getPropertyValueByName(USERS_API) + "/2"));
+        } else {
+            rootInitializer.setWorldResponse(baseRequestSpecification().body(jsonObject.toString())
+                    .patch(getPropertyValueByName(USERS_API) + "/2"));
+        }
     }
 
     @Given("I call the users api to delete user with id {string}")
-    public void i_call_the_users_api_to_delete_user_with_id(String string) {
+    public void deleteUser(String string) {
+        rootInitializer.setWorldResponse(baseRequestSpecification()
+                .delete(getPropertyValueByName(USERS_API) + "/2"));
+    }
+
+    @Then("I should receive a status code {string} and an empty response body")
+    public void verifyUserDeletion(String code) {
+        rootInitializer.getWorldResponse().then().assertThat().statusCode(Integer.parseInt(code))
+                .assertThat().contentType(isEmptyOrNullString());
 
     }
 
