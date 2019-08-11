@@ -3,12 +3,12 @@ Feature: Contact Us
   Background:
     Given I'm on the Home Page
 
-  @contact
+  @ui, @contact
   Scenario: Verify user is redirected to Contact Us page
     When User clicks on the button "Contact us"
     Then the user should be redirected to Contact us page
 
-  @contact
+  @ui, @contact
   Scenario: Verify user is able to send message
     Given User is on the contact page
     When user selects "Customer service" as heading

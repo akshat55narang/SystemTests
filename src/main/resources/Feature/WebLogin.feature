@@ -6,6 +6,3 @@ Feature: Login
     When the user enters a valid email in the create account section
     Then the user should be redirected to account creation page
 
-  Scenario:
-    Given
-

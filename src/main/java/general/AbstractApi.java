@@ -16,8 +16,9 @@ import static managers.ConfigFileManager.getPropertyValueByName;
 public class AbstractApi {
 
     private static final Logger logger = LogManager.getLogger(AbstractApi.class);
+
     protected RequestSpecification givenWithLogs() {
-        return RestAssured.given().log().all();
+        return RestAssured.given();
     }
 
     protected RequestSpecification given() {
@@ -25,8 +26,8 @@ public class AbstractApi {
                 .filter(ResponseLoggingFilter.logResponseIfStatusCodeIs(302));
     }
 
-    protected RequestSpecification baseRequestSpecification() {
-        return given().contentType("application/json");
+    public RequestSpecification baseRequestSpecification() {
+        return given().log().all().contentType("application/json");
     }
 
     protected RequestSender when() {

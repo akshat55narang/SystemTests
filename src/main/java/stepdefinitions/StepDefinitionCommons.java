@@ -8,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
-import static managers.ConfigFileManager.TEST_TYPE;
+import static managers.ConfigFileManager.DEFAULT_TEST_TYPE;
 import static managers.ConfigFileManager.getPropertyValueByName;
 
 public class StepDefinitionCommons {
@@ -19,23 +19,23 @@ public class StepDefinitionCommons {
 
     public StepDefinitionCommons(RootInitializer rootInitializer) {
         this.rootInitializer = rootInitializer;
-        this.driver = rootInitializer.getDriverProvider().getWebDriver();
     }
 
     @Before
     public void beforeScenario(Scenario scenario) {
         log.info("*******  Before Scenario ********");
         log.info("Executing Scenario - " + scenario.getName());
-
     }
 
     @After
     public void afterScenario(Scenario scenario) {
         log.info("****** Executing After Scenario *******");
-        if (getPropertyValueByName(TEST_TYPE).equals("UI")) {
+        if (!getPropertyValueByName(DEFAULT_TEST_TYPE).contains("API")) {
+            driver = rootInitializer.getDriverProvider().getWebDriver();
             if (driver != null) {
                 driver.quit();
                 log.info("Closed all Webdriver Instances !!!");
+
             }
         }
         log.info("Scenario " + scenario.getName() + " Complete with Status " + scenario.getStatus());

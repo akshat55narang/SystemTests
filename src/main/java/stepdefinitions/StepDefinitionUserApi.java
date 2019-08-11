@@ -6,7 +6,10 @@ import general.AbstractApi;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import managers.RootInitializer;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
+import org.junit.Assert;
 
 import static managers.ConfigFileManager.*;
 import static org.hamcrest.Matchers.*;
@@ -14,6 +17,8 @@ import static org.hamcrest.Matchers.*;
 public class StepDefinitionUserApi extends AbstractApi {
     private RootInitializer rootInitializer;
     private Response response;
+
+    private static final Logger logger = LogManager.getLogger(StepDefinitionUserApi.class);
 
     public StepDefinitionUserApi(RootInitializer rootInitializer) {
         this.rootInitializer = rootInitializer;
@@ -35,18 +40,18 @@ public class StepDefinitionUserApi extends AbstractApi {
     @Given("I call the users api for a single user with id {string}")
     public void singeUserApi(String userId) {
         response = baseRequestSpecification().get(getPropertyValueByName(USERS_API) + "/" + userId);
-        rootInitializer.setWorldResponse(response);
+        
     }
 
     @Then("I should receive a status code {string} and the response body should contain single user id")
     public void validateSingleUserResponse(String code) {
-        rootInitializer.getWorldResponse().then().assertThat().statusCode(Integer.parseInt(code)).
+        response.then().assertThat().statusCode(Integer.parseInt(code)).
                 assertThat().body("data.id", equalTo(Integer.parseInt("2")));
     }
 
     @Then("I should receive a status code {string} and the response body should be empty")
     public void validateResponseInvalidUser(String code) {
-        rootInitializer.getWorldResponse().then().assertThat().statusCode(Integer.parseInt(code))
+        response.then().assertThat().statusCode(Integer.parseInt(code))
                 .assertThat().body("size()", equalTo(0));
     }
 
@@ -55,16 +60,21 @@ public class StepDefinitionUserApi extends AbstractApi {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("name", userName)
                 .put("job", job);
-        rootInitializer.setWorldResponse(baseRequestSpecification().body(jsonObject.toString())
-                .post(getPropertyValueByName(USERS_API)));
+        response = baseRequestSpecification().body(jsonObject.toString())
+                .post(getPropertyValueByName(USERS_API));
     }
 
     @Then("I should receive a status code {string} and the response body contain user with name {string} and  job {string}")
     public void verifyUserNameAndJob(String code, String userName, String job) {
-        Response extractResponse = rootInitializer.getWorldResponse().then().extract().response();
-        extractResponse.then().assertThat().statusCode(Integer.parseInt(code))
-                .assertThat().body("name", equalTo(userName))
-                .assertThat().body("job", equalTo(job));
+        Response extractResponse = response.then().extract().response();
+        try {
+            extractResponse.then().assertThat().statusCode(Integer.parseInt(code))
+                    .assertThat().body("name", equalTo(userName))
+                    .assertThat().body("job", equalTo(job));
+        } catch (AssertionError e) {
+            logger.error("Exception caught", e);
+            Assert.fail();
+        }
     }
 
     @Given("I call the users api to update user with id {string} name {string} and job {string} using {string} HTTP method")
@@ -73,23 +83,23 @@ public class StepDefinitionUserApi extends AbstractApi {
         jsonObject.put("name", userName)
                 .put("job", job);
         if (httpMethod.equals("put")) {
-            rootInitializer.setWorldResponse(baseRequestSpecification().body(jsonObject.toString())
-                    .put(getPropertyValueByName(USERS_API) + "/" + userId));
+            response = baseRequestSpecification().body(jsonObject.toString())
+                    .put(getPropertyValueByName(USERS_API) + "/" + userId);
         } else {
-            rootInitializer.setWorldResponse(baseRequestSpecification().body(jsonObject.toString())
-                    .patch(getPropertyValueByName(USERS_API) + "/" + userId));
+            response = baseRequestSpecification().body(jsonObject.toString())
+                    .patch(getPropertyValueByName(USERS_API) + "/" + userId);
         }
     }
 
     @Given("I call the users api to delete user with id {string}")
     public void deleteUser(String string) {
-        rootInitializer.setWorldResponse(baseRequestSpecification()
-                .delete(getPropertyValueByName(USERS_API) + "/2"));
+        response = baseRequestSpecification()
+                .delete(getPropertyValueByName(USERS_API) + "/2");
     }
 
     @Then("I should receive a status code {string} and an empty response body")
     public void verifyUserDeletion(String code) {
-        rootInitializer.getWorldResponse().then().assertThat().statusCode(Integer.parseInt(code))
+        response.then().assertThat().statusCode(Integer.parseInt(code))
                 .assertThat().contentType(isEmptyOrNullString());
 
     }
