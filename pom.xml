@@ -118,7 +118,7 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
-            <version>4.3.0</version>
+            <version>4.2.0</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -150,17 +150,11 @@
             <artifactId>cucumber-reporting</artifactId>
             <version>3.15.0</version>
         </dependency>
-    <dependency>
-        <groupId>com.aventstack</groupId>
-        <artifactId>extentreports</artifactId>
-        <version>3.1.2</version>
-    </dependency>
-
-    <dependency>
-        <groupId>com.vimalselvam</groupId>
-        <artifactId>cucumber-extentsreport</artifactId>
-        <version>3.0.2</version>
-    </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports-cucumber4-adapter</artifactId>
+            <version>1.0.7</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

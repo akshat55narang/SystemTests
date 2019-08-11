@@ -27,7 +27,7 @@ public class AbstractApi {
     }
 
     public RequestSpecification baseRequestSpecification() {
-        return given().log().all().contentType("application/json");
+        return given().contentType("application/json");
     }
 
     protected RequestSender when() {
