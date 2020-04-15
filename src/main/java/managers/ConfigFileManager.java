@@ -25,7 +25,7 @@ public class ConfigFileManager {
             properties = new Properties();
             properties.load(reader);
         } catch (IOException e) {
-            log.error("Not able to Load proeprty file !!");
+            log.error("Not able to Load property file !!");
             e.printStackTrace();
         }
         return properties;

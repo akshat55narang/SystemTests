@@ -14,7 +14,7 @@ import java.io.PrintStream;
 @CucumberOptions(
         features = "src/main/resources/Feature"
         , glue = "stepdefinitions"
-        , tags = "@resourceapi"
+        , tags = "@contactus"
         , monochrome = true
         , plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
         //, dryRun = true
@@ -32,7 +32,6 @@ public class TestRunner {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
     }
 
     @AfterClass

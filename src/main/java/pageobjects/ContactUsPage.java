@@ -7,6 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.io.File;
+
+import static general.CustomWaits.assertEventually;
 import static managers.ConfigFileManager.DEFAULT_WEB_URL;
 import static managers.ConfigFileManager.getPropertyValueByName;
 import static org.junit.Assert.assertTrue;
@@ -20,14 +23,41 @@ public class ContactUsPage extends AbstractPage {
         this.driver = driver;
     }
 
-    public void verify() {
+    public void open() {
         driver.get(getPropertyValueByName(DEFAULT_WEB_URL) + "?controller=contact");
         logger.info("Opening Contact Us Page !!!!");
-        assertTrue("Current Url is not Contact Us", getCurrentUrl().endsWith("controller=contact"));
+    }
+
+    public void verify() {
+        assertEventually(3, 500, () -> {
+            assertTrue("Contact Us page is not open", getCurrentUrl().endsWith("controller=contact"));
+        });
     }
 
     public void selectMessageHeading(String visibleText) {
         WebElement element = findElement(By.id("id_contact"));
         selectByVisibleText(element, visibleText);
+    }
+
+    public void enterEmailAddress(String email) {
+        sendTextToFieldBy(By.xpath("//input[@id='email']"), email);
+    }
+
+    public void enterOrderReference(String orderReference) {
+        sendTextToFieldBy(By.xpath("//input[@id='id_order']"), orderReference);
+    }
+
+    public void attachFileToContactForm(String fileName) {
+        File file = new File(System.getProperty("user.dir") + "/src/main/resources/test.png");
+        String absolutePath = file.getAbsolutePath();
+        uploadFileFromLocalDrive(absolutePath);
+    }
+
+    public void enterMessage(String message) {
+        sendTextToFieldBy(By.cssSelector("#message"), message);
+    }
+
+    public void verifySuccessMessage() {
+        waitForElement(5, By.xpath("//p[text()='Your message has been successfully sent to our team.']"));
     }
 }

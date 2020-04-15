@@ -67,7 +67,7 @@ public class AbstractPage {
         return newWait().until(ExpectedConditions.elementToBeClickable(by));
     }
 
-    public void clickButtonWithText(String text) {
+    protected void clickButtonWithText(String text) {
         waitForElementToBeClickable(By.xpath("//*[contains(text(),'" + text + "')]")).click();
     }
 
@@ -75,11 +75,11 @@ public class AbstractPage {
         return newWait().until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
-    protected void sendTextToFieldBy(By by, String email) {
+    protected void sendTextToFieldBy(By by, String inputText) {
         WebElement element = waitForElementToBeClickable(by);
+        element.clear();
         element.click();
-        element.sendKeys(email);
-        element.getAttribute("value").equals(email);
+        element.sendKeys(inputText);
     }
 
     protected void moveToAnElement(WebElement element) {
@@ -113,5 +113,12 @@ public class AbstractPage {
 
     protected void selectByVisibleText(WebElement element, String visibleText) {
         new Select(element).selectByVisibleText(visibleText);
+        waitForElement(3, By.xpath("//span[text()='" + visibleText + "']"));
     }
+
+    protected void uploadFileFromLocalDrive(String path) {
+        WebElement element = findElement(By.xpath("//input[@id='fileUpload']"));
+        element.sendKeys(path);
+    }
+
 }

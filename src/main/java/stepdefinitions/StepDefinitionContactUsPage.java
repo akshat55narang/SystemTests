@@ -8,8 +8,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import pageobjects.ContactUsPage;
 
-import static org.junit.Assert.assertTrue;
-
 public class StepDefinitionContactUsPage {
     private RootInitializer rootInitializer;
     private ContactUsPage contactUsPage;
@@ -23,11 +21,12 @@ public class StepDefinitionContactUsPage {
 
     @Then("the user should be redirected to Contact us page")
     public void verifyContactUsPage() {
-        assertTrue("Not on Contact us page!!", contactUsPage.getCurrentUrl().endsWith("controller=contact"));
+       contactUsPage.verify();
     }
 
     @Given("User is on the contact page")
     public void onContactUsPage() {
+        contactUsPage.open();
         contactUsPage.verify();
     }
 
@@ -36,28 +35,29 @@ public class StepDefinitionContactUsPage {
         contactUsPage.selectMessageHeading(visibleText);
     }
 
-    @When("user enters the {string}")
-    public void user_enters_the(String string) {
+    @When("user enters the email {string}")
+    public void enterEmail(String email) {
+        contactUsPage.enterEmailAddress(email);
+    }
 
-
+    @When("user enters the order reference {string}")
+    public void enterOrderReference(String orderReference) {
+        contactUsPage.enterOrderReference(orderReference);
     }
 
     @When("user attaches the file {string}")
-    public void user_attaches_the_file(String string) {
-
-
+    public void attachFile(String fileName) {
+        contactUsPage.attachFileToContactForm(fileName);
     }
 
-    @When("user enters the default message")
-    public void user_enters_the_default_message() {
-
-
+    @When("user enters the message {string}")
+    public void enterMessage(String message) {
+        contactUsPage.enterMessage(message);
     }
 
     @Then("the message should be sent successfully")
-    public void the_message_should_be_sent_successfully() {
-
-
+    public void verifySuccessMessageContactUsForm() {
+        contactUsPage.verifySuccessMessage();
     }
 
 }
