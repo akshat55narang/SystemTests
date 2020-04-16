@@ -24,7 +24,7 @@ public class RootInitializer {
 
     public RootInitializer() {
         requestSpecification = getBaseRequest();
-        if (!getPropertyValueByName(DEFAULT_TEST_TYPE).contains("API")) {
+        if (!(getDefaultTestType()).contains("API")) {
             WebDriverManager.chromedriver().setup();
             logger.info("Setting up ChromeDriver !!");
             driverProvider = new DriverProvider();
@@ -46,5 +46,17 @@ public class RootInitializer {
 
     public PageManager getPageManager() {
         return pageManager;
+    }
+
+    public static String getParams(String variableName, String defaultValue) {
+        String env = System.getenv(variableName);
+        if (env != null) {
+            variableName = defaultValue;
+        }
+        String result = System.getProperty(variableName, defaultValue);
+        if (result == null) {
+            variableName = defaultValue;
+        }
+        return result;
     }
 }

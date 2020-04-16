@@ -6,6 +6,8 @@ import org.apache.logging.log4j.Logger;
 import java.io.*;
 import java.util.Properties;
 
+import static managers.RootInitializer.getParams;
+
 public class ConfigFileManager {
     private static final Logger log = LogManager.getLogger(ConfigFileManager.class);
     public static final String PROPERTIES_PATH = "data.properties";
@@ -18,6 +20,7 @@ public class ConfigFileManager {
     public static final String REGISTER_API = "register.api";
     public static final String DEFAULT_API_PAGE_SIZE = "default.pagesize";
     public static final String DEFAULT_TEST_TYPE = "test.type";
+    public static final String DEFAULT_CUCUMBER_TAGS = "default.cucumber.tags";
 
     public static Properties loadProperties() {
         Properties properties = null;
@@ -33,6 +36,10 @@ public class ConfigFileManager {
 
     public static String getPropertyValueByName(String name) {
         return loadProperties().getProperty(name);
+    }
+
+    public static String getDefaultTestType() {
+        return getParams("testType", getPropertyValueByName(DEFAULT_TEST_TYPE));
     }
 
 }
