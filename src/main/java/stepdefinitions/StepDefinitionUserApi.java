@@ -3,16 +3,15 @@ package stepdefinitions;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import general.AbstractApi;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import managers.RootInitializer;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
-import org.junit.Assert;
 
 import static managers.ConfigFileManager.*;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.isEmptyOrNullString;
 
 public class StepDefinitionUserApi extends AbstractApi {
     private RootInitializer rootInitializer;
@@ -32,15 +31,13 @@ public class StepDefinitionUserApi extends AbstractApi {
 
     @Then("I should receive a status code {string} and the response body should contain multiple user ids")
     public void validateMultipleUserResponse(String code) {
-        response.then().assertThat().statusCode(Integer.parseInt(code));
-        Response responseFinal = response.then().contentType(ContentType.JSON).extract().response();
-        responseFinal.then().assertThat().body("data.id.size()", greaterThan(1));
+        response.then().assertThat().statusCode(Integer.parseInt(code))
+                .assertThat().body("total_pages", equalTo(2));
     }
 
     @Given("I call the users api for a single user with id {string}")
     public void singeUserApi(String userId) {
         response = baseRequestSpecification().get(getPropertyValueByName(USERS_API) + "/" + userId);
-        
     }
 
     @Then("I should receive a status code {string} and the response body should contain single user id")
@@ -66,15 +63,9 @@ public class StepDefinitionUserApi extends AbstractApi {
 
     @Then("I should receive a status code {string} and the response body contain user with name {string} and  job {string}")
     public void verifyUserNameAndJob(String code, String userName, String job) {
-        Response extractResponse = response.then().extract().response();
-        try {
-            extractResponse.then().assertThat().statusCode(Integer.parseInt(code))
+        response.then().assertThat().statusCode(Integer.parseInt(code))
                     .assertThat().body("name", equalTo(userName))
                     .assertThat().body("job", equalTo(job));
-        } catch (AssertionError e) {
-            logger.error("Exception caught", e);
-            Assert.fail();
-        }
     }
 
     @Given("I call the users api to update user with id {string} name {string} and job {string} using {string} HTTP method")

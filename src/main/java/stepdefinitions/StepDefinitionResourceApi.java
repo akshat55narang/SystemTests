@@ -8,11 +8,10 @@ import general.AbstractApi;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import managers.RootInitializer;
-import org.hamcrest.Matchers;
 
-import static managers.ConfigFileManager.REGISTER_API;
+import static managers.ConfigFileManager.RESOURCE_API;
 import static managers.ConfigFileManager.getPropertyValueByName;
-import static org.hamcrest.Matchers.greaterThan;
+import static org.hamcrest.Matchers.*;
 
 public class StepDefinitionResourceApi extends AbstractApi {
     private RootInitializer rootInitializer;
@@ -24,36 +23,34 @@ public class StepDefinitionResourceApi extends AbstractApi {
         requestSpecification = rootInitializer.getBaseRequest();
     }
 
-    @When("I call the register api")
+    @When("I list all the resources")
     public void callRegisterApi() {
-        response = requestSpecification.get(getPropertyValueByName(REGISTER_API));
+        response = requestSpecification.get(getPropertyValueByName(RESOURCE_API));
     }
 
-    @And("the response body should contain multiple resource ids")
-    public void verifyResponseMultipleResourceIds() {
-        response.then().log().all();
-        response.then().assertThat().statusCode(200)
-                .assertThat().body("data.id.size()", greaterThan(1));
+    @Then("I should receive a status code {string} and multiple resource ids for resource api")
+    public void verifyMultipleResources(String statusCode) {
+        response.then().assertThat().statusCode(Integer.parseInt(statusCode)).and()
+                .assertThat().statusCode(200).and().assertThat().body("total", greaterThan(1))
+                .and().assertThat().body("data.size()", greaterThan(1));
     }
 
-    @Given("I call the register api for a single id with id {string}")
+    @Given("I list the resource with id {string}")
     public void callRegisterApiWithSignleId(String resourceId) {
-        response = requestSpecification.get(getPropertyValueByName(REGISTER_API) + "/" + resourceId);
-
+        response = requestSpecification.get(getPropertyValueByName(RESOURCE_API) + "/" + resourceId);
     }
 
-    @Then("I should receive a status code {string} for register api")
-    public void verifyStatusCodeRegisterApi(String statusCode) {
-        response.then().assertThat().statusCode(Integer.parseInt(statusCode));
+    @Then("I should receive a status code {string} and a single resource id for resource api")
+    public void verifySingleResource(String statusCode) {
+        response.then().assertThat().statusCode(Integer.parseInt(statusCode)).and()
+                .assertThat().statusCode(200).and()
+                .assertThat().body("data.id", equalTo(2));
     }
 
-    @And("the response body should not contain any resource ids")
-    public void verifyEmptyResponseResourceIds() {
-        response.then().assertThat().body("isEmpty()", Matchers.is(true));
+    @And("I should receive a status code {string} and no body for resource api")
+    public void verifyEmptyResponseResourceIds(String statusCode) {
+        response.then().assertThat().statusCode(Integer.parseInt(statusCode))
+        .and().assertThat().body("isEmpty()", is(true));
     }
 
-    @And("the response body should contain single resource id")
-    public void verifyResponseSingleResourceId() {
-        response.then().extract().jsonPath().getString("data.id").equals(2);
-    }
 }

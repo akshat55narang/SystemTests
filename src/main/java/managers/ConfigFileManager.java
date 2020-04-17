@@ -17,10 +17,12 @@ public class ConfigFileManager {
     public static final String DEFAULT_TIMEOUT = "explicit_timeout";
     public static final String DEFAULT_EMAIL_ADDRESS = "default_email_address";
     public static final String USERS_API = "users.api";
+    public static final String RESOURCE_API = "resource.api";
     public static final String REGISTER_API = "register.api";
+    public static final String LOGIN_API = "login.api";
     public static final String DEFAULT_API_PAGE_SIZE = "default.pagesize";
     public static final String DEFAULT_TEST_TYPE = "test.type";
-    public static final String DEFAULT_CUCUMBER_TAGS = "default.cucumber.tags";
+
 
     public static Properties loadProperties() {
         Properties properties = null;

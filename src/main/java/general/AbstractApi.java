@@ -7,6 +7,7 @@ import io.restassured.specification.RequestSender;
 import io.restassured.specification.RequestSpecification;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.json.JSONObject;
 
 import java.util.Map;
 
@@ -42,5 +43,7 @@ public class AbstractApi {
         return RestAssured.get(uri, params);
     }
 
-
+    protected JSONObject baseRegistrationLoginApiObject(String email) {
+        return new JSONObject().put("email", email);
+    }
 }

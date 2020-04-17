@@ -35,7 +35,6 @@ public class RootInitializer {
         }
     }
 
-
     public RequestSpecification getBaseRequest() {
         return (requestSpecification == null) ? new AbstractApi().baseRequestSpecification() : requestSpecification;
     }
@@ -55,7 +54,7 @@ public class RootInitializer {
         }
         String result = System.getProperty(variableName, defaultValue);
         if (result == null) {
-            variableName = defaultValue;
+            result = defaultValue;
         }
         return result;
     }
