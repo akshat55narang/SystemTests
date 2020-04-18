@@ -11,20 +11,22 @@ Post Test Execution -
 Report  - test-output/HtmlReport/ExtentHtml.html
 Logs - logs
 
-Tools Used
-Programming Language - Java
-Framework Details - BDD using Cucumber and Gherkin Syntax, Selenium WebDriver, Rest-assured
-Reporting - Extent-Reports
-JSON libraries - for manipulting JSON data
-
-How To Run
+# How To Run
 1. mvn clean test ( uses default properties in data.properties and cucumber options in TestRunner.java )
 
 2. mvn -DtestType=UI -DwebUrl=http://automationpractice.com -DapiUri=https://reqres.in/ -Dbrowser=chrome -DexplicitTimeout=30 clean test
 
-Note - 
-In point 2, properties in data.properties like default timeout, web url, api url can be overridden via maven properties. This feature enables to execute tests on multiple environments , without making changes to for example urls for each environment. 
-Variable Options - 
+3. mvn -DtestType=API -DwebUrl=http://automationpractice.com -DapiUri=https://reqres.in/ -Dbrowser=chrome -DexplicitTimeout=30 clean test
+
+4. mvn -DtestType=UI -DwebUrl=http://automationpractice.com -DapiUri=https://reqres.in/ -Dbrowser=chrome -DexplicitTimeout=30 -Dcucumber.options="--tags @ui" clean test 
+(Run specific tests based on cucumber tags )
+
 -DtestType = UI - ( to execute either UI tests or API tests or both ).
 -DtestType = API ( to execute only api tests , webdriver will not be initialized as its not required for api tests and will reduce execution time significantly).
+
+# Tools Used
+Programming Language - Java
+Framework Details - BDD using Cucumber and Gherkin Syntax, Selenium WebDriver, Rest-assured
+Reporting - Extent-Reports
+JSON libraries - for manipulting JSON data
 
