@@ -11,8 +11,7 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
-import static managers.ConfigFileManager.DEFAULT_API_URI;
-import static managers.ConfigFileManager.getPropertyValueByName;
+import static managers.ConfigFileManager.*;
 
 public class AbstractApi {
 
@@ -36,7 +35,7 @@ public class AbstractApi {
     }
 
     protected Response get(String uri) {
-        return RestAssured.get(getPropertyValueByName(DEFAULT_API_URI) + uri);
+        return RestAssured.get(getDefaultApiUri() + uri);
     }
 
     protected Response get(String uri, Map<String, String> params) {

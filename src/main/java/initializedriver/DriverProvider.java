@@ -17,7 +17,7 @@ public class DriverProvider {
     }
 
     private WebDriver createWebDriver() {
-        switch (getPropertyValueByName(DEFAULT_BROWSER)) {
+        switch (getDefaultBrowser()) {
             case "chrome":
                 driver = new ChromeDriver();
                 logger.info("Starting Chrome !!!");

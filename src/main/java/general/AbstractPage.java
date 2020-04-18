@@ -17,8 +17,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-import static managers.ConfigFileManager.DEFAULT_TIMEOUT;
-import static managers.ConfigFileManager.getPropertyValueByName;
+import static managers.ConfigFileManager.*;
 
 public class AbstractPage {
     private WebDriver driver;
@@ -29,7 +28,7 @@ public class AbstractPage {
     }
 
     protected FluentWait<WebDriver> newWait() {
-        return new WebDriverWait(driver, Integer.parseInt(getPropertyValueByName(DEFAULT_TIMEOUT)))
+        return new WebDriverWait(driver, Integer.parseInt(getDefaultTimeout()))
                 .ignoring(StaleElementReferenceException.class);
     }
 

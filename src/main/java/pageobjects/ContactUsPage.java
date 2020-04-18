@@ -10,8 +10,7 @@ import org.openqa.selenium.WebElement;
 import java.io.File;
 
 import static general.CustomWaits.assertEventually;
-import static managers.ConfigFileManager.DEFAULT_WEB_URL;
-import static managers.ConfigFileManager.getPropertyValueByName;
+import static managers.ConfigFileManager.*;
 import static org.junit.Assert.assertTrue;
 
 public class ContactUsPage extends AbstractPage {
@@ -24,7 +23,7 @@ public class ContactUsPage extends AbstractPage {
     }
 
     public void open() {
-        driver.get(getPropertyValueByName(DEFAULT_WEB_URL) + "?controller=contact");
+        driver.get(getDefaulftWebUrl() + "?controller=contact");
         logger.info("Opening Contact Us Page !!!!");
     }
 

@@ -18,7 +18,7 @@ public class RootInitializer {
     private static final Logger logger = LogManager.getLogger(RootInitializer.class);
 
     static {
-        RestAssured.baseURI = getPropertyValueByName(DEFAULT_API_URI);
+        RestAssured.baseURI = getDefaultApiUri();
         logger.info("Set Base URI to =" + RestAssured.baseURI);
     }
 
@@ -30,8 +30,8 @@ public class RootInitializer {
             driverProvider = new DriverProvider();
             logger.info("Initializing Page Manager !!");
             pageManager = new PageManager(driverProvider.getWebDriver());
-            logger.info("Opening URL" + getPropertyValueByName(DEFAULT_WEB_URL));
-            driverProvider.getWebDriver().get(getPropertyValueByName(DEFAULT_WEB_URL));
+            logger.info("Opening URL" + getDefaulftWebUrl());
+            driverProvider.getWebDriver().get(getDefaulftWebUrl());
         }
     }
 

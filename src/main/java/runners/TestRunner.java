@@ -14,7 +14,6 @@ import java.io.PrintStream;
 @CucumberOptions(
         features = "src/main/resources/Feature"
         , glue = "stepdefinitions"
-        , tags = "@api"
         , monochrome = true
         , plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
