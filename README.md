@@ -20,7 +20,7 @@ Logs - logs
 4. mvn -DtestType=UI -DwebUrl=http://automationpractice.com -DapiUri=https://reqres.in/ -Dbrowser=chrome -DexplicitTimeout=30 -Dcucumber.options="--tags @ui" clean test 
 (Run specific tests based on cucumber tags )
 
--DtestType = UI - ( to execute either UI tests or API tests or both ).
+-DtestType = UI - ( to execute either UI tests or both (UI + API tests) ).
 -DtestType = API ( to execute only api tests , webdriver will not be initialized as its not required for api tests and will reduce execution time significantly).
 
 # Tools Used
