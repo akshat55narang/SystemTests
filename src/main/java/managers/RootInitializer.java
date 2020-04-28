@@ -24,7 +24,8 @@ public class RootInitializer {
 
     public RootInitializer() {
         requestSpecification = getBaseRequest();
-        if (!(getDefaultTestType()).contains("API")) {
+        logger.info("Cucumber Tags = " + System.getProperty("cucumber.options"));
+        if (System.getProperty("cucumber.options").contains("@ui")) {
             WebDriverManager.chromedriver().setup();
             logger.info("Setting up ChromeDriver !!");
             driverProvider = new DriverProvider();
