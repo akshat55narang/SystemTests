@@ -28,7 +28,7 @@ Framework Details - BDD using Cucumber and Gherkin Syntax, Selenium WebDriver, R
 Reporting - Extent-Reports<br/>
 JSON libraries - for manipulting JSON data<br/>
 
-#To-Do
+# To-Do
  1. Capture screen shot on UI test failures.
  2. Store request and response in the logs in case of api test failure.
 
