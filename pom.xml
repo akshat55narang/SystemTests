@@ -166,6 +166,8 @@
                 <configuration>
                     <testSourceDirectory>${basedir}/src/main/java/</testSourceDirectory>
                     <testClassesDirectory>${project.build.directory}/classes/</testClassesDirectory>
+                    <parallel>methods</parallel>
+                    <threadCount>10</threadCount>
                 </configuration>
             </plugin>
             <plugin>

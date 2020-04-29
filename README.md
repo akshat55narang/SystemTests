@@ -11,17 +11,16 @@ Report  - test-output/HtmlReport/ExtentHtml.html<br/>
 Logs - logs
 
 # How To Run
-1. mvn clean test ( uses default properties in data.properties and cucumber options in TestRunner.java )
 
-2. mvn -DtestType=UI -DwebUrl=http://automationpractice.com -DapiUri=https://reqres.in/ -Dbrowser=chrome -DexplicitTimeout=30 clean test
+1. mvn -DwebUrl=http://automationpractice.com -DapiUri=https://reqres.in/ -Dbrowser=chrome -DexplicitTimeout=30 "-Dcucumber.options=--tags @api" clean test
+( run only api tests based on cucumber tags, webdriver will not be initialized as its not required for api tests and will reduce execution time significantly )
 
-3. mvn -DtestType=API -DwebUrl=http://automationpractice.com -DapiUri=https://reqres.in/ -Dbrowser=chrome -DexplicitTimeout=30 clean test
+2. mvn -DwebUrl=http://automationpractice.com -DapiUri=https://reqres.in/ -Dbrowser=chrome -DexplicitTimeout=30 "-Dcucumber.options=--tags @ui" clean test
+( run only ui tests based on cucumber tags )
 
-4. mvn -DtestType=UI -DwebUrl=http://automationpractice.com -DapiUri=https://reqres.in/ -Dbrowser=chrome -DexplicitTimeout=30 -Dcucumber.options="--tags @ui" clean test 
-(Run specific tests based on cucumber tags )
+3. mvn -DwebUrl=http://automationpractice.com -DapiUri=https://reqres.in/ -Dbrowser=chrome -DexplicitTimeout=30 "-Dcucumber.options=--tags '@ui or @api'" clean test
+(Run both ui and api tests based on cucumber tags )
 
--DtestType = UI - ( to execute either UI tests or both (UI + API tests) ).
--DtestType = API ( to execute only api tests , webdriver will not be initialized as its not required for api tests and will reduce execution time significantly).
 
 # Tools Used
 Programming Language - Java<br/>

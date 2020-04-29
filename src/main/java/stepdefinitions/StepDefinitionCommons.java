@@ -8,8 +8,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
-import static managers.ConfigFileManager.*;
-
 public class StepDefinitionCommons {
     private RootInitializer rootInitializer;
     private WebDriver driver;
@@ -29,7 +27,7 @@ public class StepDefinitionCommons {
     @After
     public void afterScenario(Scenario scenario) {
         log.info("****** Executing After Scenario *******");
-        if (!getDefaultTestType().contains("API")) {
+        if (System.getProperty("cucumber.options").contains("@ui")) {
             driver = rootInitializer.getDriverProvider().getWebDriver();
             if (driver != null) {
                 driver.quit();
