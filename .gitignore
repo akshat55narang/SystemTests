@@ -1,4 +1,5 @@
 .idea/
 target/
 test-output/
-logs/
+SystemTests.iml
+logs/test.log
