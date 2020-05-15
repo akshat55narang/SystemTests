@@ -22,15 +22,11 @@ public class TestRunner {
 
     @BeforeClass
     public static void setup() {
-        PrintStream printStream = null;
-        try {
-            printStream = new PrintStream(new FileOutputStream(System.getProperty("user.dir")
-                    + "/logs/test.log", false), false);
+        try (PrintStream printStream = new PrintStream(new FileOutputStream(System.getProperty("user.dir")
+                + "/test.log", false), false)) {
             System.setOut(printStream);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        } finally {
-            printStream.close();
         }
     }
 

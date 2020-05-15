@@ -2,4 +2,4 @@
 target/
 test-output/
 SystemTests.iml
-logs/test.log
+test.log
