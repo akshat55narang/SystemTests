@@ -8,9 +8,10 @@ Test Scenarios - src/main/resources/Feature
 
 Post Test Execution<br/>
 Report  - test-output/HtmlReport/ExtentHtml.html<br/>
-Logs - logs
+Logs - test.log
 
 # How To Run
+From the SystemTests directory  - 
 
 1. mvn -DwebUrl=http://automationpractice.com -DapiUri=https://reqres.in/ -Dbrowser=chrome -DexplicitTimeout=30 "-Dcucumber.options=--tags @api" clean test
 ( run only api tests based on cucumber tags, webdriver will not be initialized as its not required for api tests and will reduce execution time significantly )
