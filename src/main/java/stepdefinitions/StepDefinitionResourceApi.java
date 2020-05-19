@@ -17,7 +17,7 @@ public class StepDefinitionResourceApi extends AbstractApi {
     private RootInitializer rootInitializer;
     private RequestSpecification requestSpecification;
 
-    private ThreadLocal<Response> response = new ThreadLocal<>();
+    private static ThreadLocal<Response> response = new ThreadLocal<>();
 
     public StepDefinitionResourceApi(RootInitializer rootInitializer) {
         this.rootInitializer = rootInitializer;

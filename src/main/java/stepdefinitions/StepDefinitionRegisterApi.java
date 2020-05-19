@@ -13,7 +13,7 @@ import static org.hamcrest.Matchers.*;
 
 public class StepDefinitionRegisterApi extends AbstractApi {
     private RootInitializer rootInitializer;
-    private ThreadLocal<Response> response = new ThreadLocal<>();
+    private static ThreadLocal<Response> response = new ThreadLocal<>();
 
     public StepDefinitionRegisterApi(RootInitializer rootInitializer) {
         this.rootInitializer = rootInitializer;

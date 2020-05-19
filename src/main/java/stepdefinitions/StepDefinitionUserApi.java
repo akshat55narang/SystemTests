@@ -16,7 +16,7 @@ import static org.hamcrest.Matchers.isEmptyOrNullString;
 public class StepDefinitionUserApi extends AbstractApi {
     private RootInitializer rootInitializer;
 
-    private ThreadLocal<Response> response = new ThreadLocal<>();
+    private static ThreadLocal<Response> response = new ThreadLocal<>();
     private static final Logger logger = LogManager.getLogger(StepDefinitionUserApi.class);
 
     public StepDefinitionUserApi(RootInitializer rootInitializer) {

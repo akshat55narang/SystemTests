@@ -11,10 +11,10 @@ import org.apache.logging.log4j.Logger;
 import static managers.ConfigFileManager.*;
 
 public class RootInitializer {
-    private DriverProvider driverProvider;
     private PageManager pageManager;
     private RequestSpecification requestSpecification;
 
+    private static ThreadLocal<DriverProvider> driverProvider = new ThreadLocal<>();
     private static final Logger logger = LogManager.getLogger(RootInitializer.class);
 
     static {
@@ -28,11 +28,11 @@ public class RootInitializer {
         if (System.getProperty("cucumber.options").contains("@ui")) {
             WebDriverManager.chromedriver().setup();
             logger.info("Setting up ChromeDriver !!");
-            driverProvider = new DriverProvider();
+            driverProvider.set(new DriverProvider());
             logger.info("Initializing Page Manager !!");
-            pageManager = new PageManager(driverProvider.getWebDriver());
+            pageManager = new PageManager(driverProvider.get().getWebDriver());
             logger.info("Opening URL" + getDefaulftWebUrl());
-            driverProvider.getWebDriver().get(getDefaulftWebUrl());
+            driverProvider.get().getWebDriver().get(getDefaulftWebUrl());
         }
     }
 
@@ -41,7 +41,7 @@ public class RootInitializer {
     }
 
     public DriverProvider getDriverProvider() {
-        return driverProvider;
+        return driverProvider.get();
     }
 
     public PageManager getPageManager() {

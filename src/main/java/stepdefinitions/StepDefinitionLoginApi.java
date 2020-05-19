@@ -14,7 +14,7 @@ import static org.hamcrest.Matchers.notNullValue;
 public class StepDefinitionLoginApi extends AbstractApi {
     private RootInitializer rootInitializer;
 
-    private ThreadLocal<Response> response = new ThreadLocal<>();
+    private static ThreadLocal<Response> response = new ThreadLocal<>();
 
     public StepDefinitionLoginApi(RootInitializer rootInitializer) {
         this.rootInitializer = rootInitializer;
