@@ -8,7 +8,8 @@ import io.restassured.specification.RequestSpecification;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static managers.ConfigFileManager.*;
+import static managers.ConfigFileManager.getDefaulftWebUrl;
+import static managers.ConfigFileManager.getDefaultApiUri;
 
 public class RootInitializer {
     private PageManager pageManager;
