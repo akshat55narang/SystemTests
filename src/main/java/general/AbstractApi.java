@@ -1,6 +1,7 @@
 package general;
 
 import io.restassured.RestAssured;
+import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSender;
@@ -11,7 +12,7 @@ import org.json.JSONObject;
 
 import java.util.Map;
 
-import static managers.ConfigFileManager.*;
+import static managers.ConfigFileManager.getDefaultApiUri;
 
 public class AbstractApi {
 
@@ -23,7 +24,8 @@ public class AbstractApi {
 
     protected RequestSpecification given() {
         return RestAssured.given()
-                .filter(ResponseLoggingFilter.logResponseIfStatusCodeIs(302));
+                .filter(new RequestLoggingFilter())
+                .filter(new ResponseLoggingFilter());
     }
 
     public RequestSpecification baseRequestSpecification() {
